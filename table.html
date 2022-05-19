@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    table,td{
+        width:fit-content;
+        height: 10px;
+        border: 2px;
+        padding: 10px;
+        border-collapse: collapse;
+    }
+     tr{
+       
+        border-color: gray;
+        border-bottom: 2px ridge;
+        padding: 10px;
+    }
+
+    th{
+       width: fit-content;
+        padding: 10px;
+        background-color: rgb(124, 124, 248);
+        color: white;
+    }
+
+#firstrow{
+    background-color: rgb(225, 225, 242);
+    width: 10px;
+}
+img{
+    height: 15px;
+    width:15px;
+   
+}
+  
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>SYMBOL <img src="/imgs/icons8.jpg" alt="icon"></th>
+                <th>OPEN </th>
+                <th>HIGH </th>
+                <th>LOW </th>
+                <th>PREV. CLOSE </th>
+                <th> LTP  <img src="/imgs/icons8.jpg" alt="icon"></th>
+                <th>CHNG  <img src="/imgs/icons8.jpg" alt="icon"></th>
+                <th> %CHNG <img src="/imgs/icons8.jpg" alt="icon"></th>
+                <th>VOLUME(shares) <img src="/imgs/icons8.jpg" alt="icon"></th>
+                <th>VALUE(₹ Lakhs)  <img src="/imgs/icons8.jpg" alt="icon"></th>
+                <th>52W H </th>
+                <th> 52W L</th>
+            </tr>
+        </thead>
+        <tbody>
+               <tr id="firstrow">
+                    <td> NIFTY FINANCIAL SERVICES</td>	
+                    <td>15,568.25</td>	
+                    <td>15,636.45</td>
+                    <td>15,505.30</td>	
+                    <td>15,492.85</td>
+                    <td>15,599.45</td>
+                    <td>106.6</td>	
+                    <td>0.69</td>
+                    <td>1,69,35,903</td>	
+                    <td>1,62,505.32</td>	
+                    <td>19,778.95</td>
+                    <td>15,042.45</td>
+               </tr>
+
+              <tr>
+                    <td> PEL</td>	
+                    <td>1893.85</td>	
+                    <td>1919.75</td>
+                    <td>1878.55</td>	
+                    <td>>1874.75</td>
+                    <td>1918.05</td>
+                    <td>43.3</td>	
+                    <td>2.31</td>
+                    <td>1,53,459</td>	
+                    <td>2904.93</td>	
+                    <td>3014.95</td>
+                    <td>1721.95</td>
+              </tr>
+
+               <tr>
+                    <td>MUTHOOTFIN</td>	
+                    <td>1,146.00</td>	
+                    <td>1,165.65</td>	
+                    <td>1,137.90</td>	
+                    <td>1,138.80</td>	
+                    <td>1,163.85</td>	
+                    <td>25.05</td>	
+                    <td>2.2</td>	
+                    <td>1,49,276</td>	
+                    <td>1,723.12</td>	
+                    <td>1,721.95</td>	
+                    <td>1,102.00</td>
+              </tr>
+
+               <tr>
+                    <td>ICICIBANK</td>	
+                    <td>686.1</td>	
+                    <td>697.65</td>	
+                    <td>685.15</td>	
+                    <td>683</td>	
+                    <td>695.6</td>	
+                    <td>12.6</td>	
+                    <td>1.84</td>	
+                    <td>23,82,276</td>	
+                    <td>16482.25</td>	
+                    <td>867</td>	
+                    <td>601.2</td>														
+              </tr>
+
+              <tr>
+                    <td>PFC</td>	
+                    <td>106.5</td>	
+                    <td>107.3</td>	
+                    <td>106.05</td>	
+                    <td>105.7</td>	
+                    <td>107.25</td>	
+                    <td>1.55</td>	
+                    <td>1.47</td>	
+                    <td>6,17,090</td>	
+                    <td>658.93</td>	
+                    <td>153.75</td>	
+                    <td>104.25</td>														
+             </tr>
+
+             <tr>
+                    <td>CHOLAFIN</td>	
+                    <td>640</td>	
+                    <td>649.2</td>	
+                    <td>638.7</td>	
+                    <td>635.7</td>	
+                    <td>645</td>	
+                    <td>9.3</td>	
+                    <td>1.46</td>	
+                    <td>7,48,908</td>	
+                    <td>4805.59</td>	
+                    <td>768</td>	
+                    <td>469.25</td>														
+              </tr>
+
+              <tr>
+                    <td>KOTAKBANK</td>	
+                    <td>1823</td>	
+                    <td>1832</td>	
+                    <td>1817.6</td>	
+                    <td>1812.85</td>	
+                    <td>1830</td>	
+                    <td>17.15</td>	
+                    <td>0.95</td>	
+                    <td>7,24,514</td>	
+                    <td>13227.52</td>	
+                    <td>2253</td>	
+                    <td>1626</td>														
+              </tr>
+
+              <tr>
+                    <td>AXISBANK</td>	
+                    <td>642.9</td>	
+                    <td>648.95</td>	
+                    <td>641.15</td>	
+                    <td>638.95</td>	
+                    <td>644.7</td>	
+                    <td>5.75</td>	
+                    <td>0.9</td>	
+                    <td>18,50,326</td>	
+                    <td>11929.61</td>	
+                    <td>866.9</td>	
+                    <td>630.05</td>														
+              </tr>
+               <tr>
+                    <td>SBIN</td>	
+                    <td>458.3</td>	
+                    <td>460.4</td>	
+                    <td>456.15</td>	
+                    <td>455</td>	
+                    <td>459.05</td>	
+                    <td>4.05</td>	
+                    <td>0.89</td>	
+                    <td>40,06,124</td>	
+                    <td>18361.67</td>	
+                    <td>549</td>	
+                    <td>363.65</td>														
+              </tr>
+
+              <tr>
+                   <td>RECLTD</td>	
+                   <td>116.5</td>	
+                   <td>116.95</td>	
+                   <td>115.4</td>	
+                   <td>115.55</td>	
+                   <td>116.5</td>	
+                   <td>0.95</td>	
+                   <td>0.82</td>	
+                   <td>8,87,686</td>	
+                   <td>1030.51</td>	
+                   <td>168.85</td>	
+                   <td>113.25</td>														
+             </tr>
+
+             <tr>
+                    <td>BAJFINANCE</td>	
+                    <td>5660</td>	
+                    <td>5732.7</td>	
+                    <td>5652</td>	
+                    <td>5645.4</td>	
+                    <td>5688.5</td>	
+                    <td>43.1</td>	
+                    <td>0.76</td>	
+                    <td>2,88,280</td>	
+                    <td>16396.59</td>	
+                    <td>8050</td>	
+                    <td>5315.05</td>														
+             </tr>
+
+             <tr>
+                    <td>SBICARD</td>	
+                    <td>726</td>	
+                    <td>731.9</td>	
+                    <td>721.05</td>	
+                    <td>722.85</td>	
+                    <td>727.55</td>	
+                    <td>4.7</td>	
+                    <td>0.65</td>	
+                    <td>2,84,720</td>	
+                    <td>2068.29</td>	
+                    <td>1165</td>	
+                    <td>710.8</td>														
+             </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout</title>
+    <script src="https://kit.fontawesome.com/ebb2c66498.js" crossorigin="anonymous"></script>
+    <title>Document</title>
     <style>
-       header{
-           background-image: url(./imgs/bgimage.jpg) ;
-           background-repeat: no-repeat;
-           background-size: cover;
-           background-position: center;
-           width:cover;
-           height: fit-content;
-       }
-       h3{
+        header{
+            background-image: url(./imgs/road.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width:cover;
+            height: fit-content;
+        }
+        h4{
            margin: 0px;
            padding-top: 20px;
            padding-left: 10px;
-           font-size: 30px;
+           color: white;
+          margin-right: 10px;
        }
        .logo{
             float: left;
@@ -31,74 +33,88 @@
             list-style-type: none;
             display: inline-block;
             padding:10px ;
-            width: 150px;
-            font-size: 30px;
+            width: 100px;
         }
         .clear
         {
             clear:both;
         }
         h5{
-        font-size: 70px;
+         font-size: 40px;
          text-align: center;
          padding-bottom: 10px;
          width: 100%;
-         color: rgb(79, 115, 232);
+         color: white;
          margin: 0px;
-         margin-top: 100px;
+         margin-top: 50px;
         }
         p{
-        font-size: 30px;
          text-align: center;
          width: 100%;
-         padding-top: 10px;
-         color:black;
-        }
-        .btn{
-            width: 150px;
+         color:rgb(241, 238, 238);
+        } 
+       .box{
+         margin: 10px;
+         /* padding: 2rem 2rem; */
+         text-align: center;
+        } 
+        .box1{
+            width: 100px;
             text-align: center;
             padding: 10px;
             background-color: azure;
-            align-content: center;
-            height: fit-content;
-            margin: 80px;
-            display: inline-block;
-            margin-left: 200px;
-            margin-right: 250px;
             box-shadow: 0px 0px 5px 2px black;
+            display: inline-block;
+            margin: 50px;
         }
-        
         .card{
-            width: 350px;
-            font-size: 150%;
+            margin-top: 40px;
+            width: 250px;
             border:2px;
             display: inline-block;
-            padding: 80px;
             border-color: bisque;
             box-shadow: 0px 0px 10px 0px rgb(116, 110, 110);   
+            text-align: center;
+            margin-bottom: 10px;
         }
-        
-        h2,p{
-            margin-top: 10px;
+        h3,p{
             margin: 0px;
             text-align: center;
+            color: black;
+            padding: 10px;
         }
         #card-description{
-            padding: 10px;
             text-align: center;
         }
-        section{
-            padding-left: 800px;
+        .btn{
+            width: fit-content;
+            text-align: center;
+            box-shadow: 0px 0px 5px 2px black;
+            display: inline-block;
+            background-color: rgb(244, 231, 215);
+            padding: 10px;
+            margin: 10px;
         }
-       
+        section{
+            padding-left: 50px;
+            text-align: center; 
+        }
+        #card1{
+            margin-right: 40px;
+        }
+        #card2{
+            margin-right: 40px;
+        }  
+        p{
+            color: azure;
+        }
     </style>
-
 </head>
 <body>
     <main id="mainEle">
         <header>
             <div id="logo" class="logo">
-                <h3>Carries</h3>
+               <h4>Carries<i class="fa-solid fa-plane"></i></h4>
             </div>
            <nav>
                 <ul>
@@ -110,55 +126,61 @@
                 </ul>
             </nav>
             <div class="clear"></div>
-                <h5>We Make the strongest <br> Service above the world</h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-           <div class="btn">Our service</div>
-            <div class="btn">Get a Quate</div>
-            <div class="clear"></div>
+
+            <h5>We Make the strongest <br> Service above the world</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="box">
+                <div class="box1">Our service</div>
+                 <div class="box1">Get a Quate</div>
+                <div class="clear"></div>
+            </div>
         </header>
         <section>
-        <div class="card" id="card1">
-            <div>
-                <img src="/imgs/ship.jpg" width="350px" height="250px" alt="ship">
+            <div class="card" id="card1">
+                <div>
+                    <img src="/imgs/ship.jpg" width="250px" height="200px" alt="ship">
+                </div>
+    
+                <div class="card-description" >
+                    <h3> OCEAN FREIGHT </h3>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+                <div class="btn">Read More</div>
+            </div>
+    
+            <div class="card" id="card2">
+                <div>
+                    <img src="/imgs/plane.jpg" width="250px" height="200px" alt="plane">
+                </div>
+    
+                <div class="card-description" >
+                    <h3> AIR FREIGHT </h3>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+                <div class="btn">Read More</div>
             </div>
 
-            <div class="card-description" >
-                <h2> OCEAN FREIGHT </h2>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p>
+             <div class="card" id="card3">
+                <div>
+                    <img src="/imgs/truck.jpg" width="250px" height="200px" alt="truck">
+                </div>
+    
+                <div class="card-description" >
+                    <h3> STREET FREIGHT </h3>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+                <div class="btn">Read More</div>
             </div>
-            <div class="btn">Read More</div>
-        </div>
-
-        <div class="card" id="card2">
-            <div>
-                <img src="/imgs/plane.jpg" width="350px" height="250px" alt="plane">
-            </div>
-            <div class="card-description">
-                <h2> Air FREIGHT </h2>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p>
-            </div>
-            <div class="btn">Read More</div>
-        </div>
-
-        <div class="card" id="card3">
-            <div>
-                <img src="/imgs/truck.jpg" width="350px" height="250px" alt="truck">
-            </div>
-            <div class="card-description">
-                <h2> STREET FREIGHT </h2>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p>
-            </div>
-            <div class="btn">Read More</div>
-        </div>
-    </section>
+        </section>
     </main>
 </body>
 </html>

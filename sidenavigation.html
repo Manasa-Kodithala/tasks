@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ebb2c66498.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            background-color: rgb(86, 84, 84);
+           
+        }
+        main{
+            display: flex;
+            height: 100vh;
+        }
+
+        header{
+            width:15%;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            overflow:auto;
+
+        }
+        article{
+            width: 85%;
+            height: 100vh;
+            overflow: auto;
+            scroll-behavior: smooth;
+        }
+        header>img{
+          margin-top: 20px;
+          width: 200px;  
+          height: 300px;
+          border-radius: 10%;
+          box-shadow: 0px 0px 4px 0px;
+         
+        }
+        h2{
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            padding: 10px;
+        }
+       
+        #list1{
+            list-style-type: none;
+        }
+        .items{
+          color: white;
+          width: 80%;  
+          height: 40px;
+          background-color: rgb(52, 50, 50);
+          text-align: center;
+          padding-top: 15px;
+          border: 2px solid;
+          border-color: grey;
+          border-radius: 15px;
+          word-spacing: 5px;
+          box-shadow: 0px 0px 2px 0px;
+          font-size: 20px;
+          margin: 10px;
+        }
+       .icon{
+           width: 30px;
+           border-radius: 25px;
+           display: inline-block;
+           font-size: 30px;
+           padding-top: 10px;
+       }
+       .box{
+           background-color: rgb(86, 84, 84);
+           width:260px;  
+           height:50px;         
+           position: fixed;
+           left: 0;
+           bottom:0;  
+       }
+       a  {
+           text-decoration: none;
+           color: white;
+        }
+        a:visited{
+            text-decoration: none;
+        }
+        a:hover {
+            color: orangered;
+            text-decoration: underline;
+        }
+        a:active {
+            color: orangered;
+            text-decoration: none;
+        }
+       .pic{
+           text-align: center;
+           padding-top: 10px;
+       }
+       .side{
+            margin-left: 100px;
+            width: 85%;
+           height: 100vh;
+           text-align: center;
+           border: 2px solid;
+           border-color: rgb(52, 50, 50);
+           border-radius: 15px;
+           box-shadow: 0px 0px 5px 0px;
+           padding: 10px;
+        } 
+        h1{
+            color: orangered;
+            font-size: 30px;
+        }
+        p{
+            color: white;
+            padding-bottom: 20px;
+        }
+        #img2>img{
+          width: 400px;  
+          height: 550px;
+          border-radius: 10%;
+          box-shadow: 0px 0px 5px 0px;
+        }
+      
+       .card{
+            width: 160px;
+            border:2px solid rgb(144, 142, 142);
+            display: inline-block;
+            box-shadow: 1px 1px 10px 5px rgb(52, 50, 50);   
+            text-align: center;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        .icon4{
+            font-size: 35px;
+           margin-top: 30px;
+           border-radius: 25px; 
+           color: orange;
+        }
+        .strip{
+            margin-top: 10px;
+            width: 250px;
+            border:2px solid rgb(144, 142, 142);
+            display: inline-block;
+            box-shadow: 1px 1px 10px 5px rgb(52, 50, 50);   
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        .card1{
+            width: 260px;
+            border:2px solid rgb(144, 142, 142);
+            display: inline-block;
+            box-shadow: 1px 1px 10px 5px rgb(52, 50, 50);   
+            text-align: center;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        .part3 li{
+            list-style-type: disc;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .part2{
+            float: left;
+            margin-left: 100px;
+        }
+        .part3{
+            float: right;
+            margin-right: 150px;
+        }
+        .clear{
+            clear: both;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="imgs/sidenav/sidetop.jpg" alt="first">
+            <h2>Alex smith</h2>
+            <ul id="list1">
+                <li><div class="items">
+                      <a href="#home"><i class="fa-solid fa-house-chimney-user "></i> Home</a>
+                    </div> 
+                </li>    
+                <li><div class="items">
+                      <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
+                    </div> 
+                </li> 
+                <li><div class="items">
+                       <a href="#services"><i class="fa-solid fa-square-poll-vertical"></i> Services</a>
+                    </div>
+                <li><div class="items">
+                      <a href="#portfolio"><i class="fa-solid fa-briefcase"></i>  portfolio</a>
+                    </div>
+                </li>    
+                <li><div class="items">
+                       <a href="#blog"><i class="fa-solid fa-file"></i>  blog</a>
+                    </div>
+                </li>    
+                <li><div class="items">
+                       <a href="#contact"><i class="fa-solid fa-envelope"></i> contact</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="box">
+                <div class="icon"><i class="fa-brands fa-twitter-square"></i></div>
+                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                <div class="icon"><i class="fa-brands fa-instagram-square"></i></div>
+                <div class="icon"><i class="fa-brands fa-skype"></i></div>
+            </div>
+        </header>
+        <article>
+                <section id="home" class="side">
+                  <div class="pic">  
+                      <img src="imgs/sidenav/first.jpg"  alt="main">
+                      <h1> Alex Smith </h1>
+                  </div>
+                </section>
+                <section id="about" class="side">
+                 <div class="part">
+                    <h1> About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="part1">
+                    <div class="part2">
+                        <div id="img2">
+                            <img src="imgs/sidenav/sidetop.jpg" alt="second">
+                        </div>
+                    </div>
+
+                    <div class="part3">
+                       <ul>
+                        <li>Name:Alex Smith</li>
+                        <li> Website:www.example.com</li>
+                        <li> Phone:(+01)123-456-789</li>
+                        <li> City:New York, USA</li>                
+                        <li> Age:30</li>
+                        <li> Degree:Master</li>
+                        <li> Email:info@example.com</li>
+                        <li> Freelance:Available</li>
+                       </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>   
+                </section>
+
+                <section id="services" class="side">
+                    <div class="page3">
+                        <h1> Services</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="box4"> 
+                        <div class="card" id="card1">
+                            <div class="icon4">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                    
+                            <div class="card-description" >
+                                <h4> Web Design </h4>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro autem, enim necessitatibus quae ab placeat consectetur velit qui, sint aliquam sunt.          
+                                 </p>
+                            </div>
+                        </div>   
+                    
+                    
+                        <div class="card" id="card2">
+                            <div class="icon4">                                
+                                <i class="fa-solid fa-fan"></i></i>
+                            </div>
+                    
+                            <div class="card-description" >
+                                <h4> Animation</h4>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro autem, enim necessitatibus quae ab placeat consectetur velit qui, sint aliquam sunt.                               
+                                 </p>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="card" id="card3">
+                            <div class="icon4">                                
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                    
+                            <div class="card-description" >
+                                <h4> Web Development</h4>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro autem, enim necessitatibus quae ab placeat consectetur velit qui, sint aliquam sunt.                                
+                                </p>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="card" id="card4">
+                            <div class="icon4">
+                                <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                            </div>
+                    
+                            <div class="card-description" >
+                                <h4> Full Responsive </h4>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro autem, enim necessitatibus quae ab placeat consectetur velit qui, sint aliquam sunt.                                
+                                </p>
+                            </div>
+                        </div> 
+
+                    </div>                                                                  
+                </section>
+
+                <section id="portfolio" class="side">
+                    <div class="page4">
+                        <h1> Portfolio</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    
+                </section>
+
+                <section id="blog" class="side">
+
+                    <div class="page5">
+                        <h1> Blog </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="strip" id="strip1">
+                        <div>
+                            <img src="/imgs/sidenav/blog1.jpg" width="250px" height="200px" alt="ship">
+                        </div>
+                
+                        <div class="desp" >
+                            <h5> Nature</h5>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-tags"></i></li>
+                                <li>Admin</li>
+                                <li>May 31, 2020</li>
+                                <li>12 Comments</li>
+                            </ul>
+                            <p style="color:rgb(224, 214, 214);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tempore.</p>
+                        </div>
+                    </div>    
+                
+                    <div class="strip" id="strip1">
+                        <div>
+                            <img src="/imgs/sidenav/blog2.jpg" width="250px" height="200px" alt="ship">
+                        </div>
+                
+                        <div class="desp" >
+                            <h5> Nature</h5>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-tags"></i></li>
+                                <li>Admin</li>
+                                <li>May 31, 2020</li>
+                                <li>12 Comments</li>
+                            </ul>
+                            <p style="color:rgb(224, 214, 214);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tempore.</p>
+                        </div>
+                    </div>    
+                
+                    <div class="strip" id="strip1">
+                        <div>
+                            <img src="/imgs/sidenav/blog3.jpg" width="250px" height="200px" alt="ship">
+                        </div>
+                
+                        <div class="desp" >
+                            <h5> Nature</h5>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-tags"></i></li>
+                                <li>Admin</li>
+                                <li>May 31, 2020</li>
+                                <li>12 Comments</li>
+                            </ul>
+                            <p style="color:rgb(224, 214, 214);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tempore.</p>
+                        </div>
+                    </div>    
+                </section>
+
+                <section id="contact" class="side">
+                     <div class="page5">
+                        <h1> Contact Me </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    
+                       
+                        <div class="card1" >
+                            <div class="icon4">                                
+                               <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <h3> Social Profiles </h3>
+
+                            <div class="wrap1">
+                                <div class="icon"><i class="fa-brands fa-twitter-square"></i></div>
+                                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                                <div class="icon"><i class="fa-brands fa-instagram-square"></i></div>
+                                <div class="icon"><i class="fa-brands fa-skype"></i></div>
+                          </div>
+                        </div>
+
+                <div class="wrap">
+
+                        <div class="card1" >
+                            <div class="icon4">                                
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="wrap2">
+                                <h3> Call Me </h3>
+                                <p>+0123456789</p>
+                            </div>
+                        </div>
+
+                        <div class="card1" >
+                            <div class="icon4">                                
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="wrap2">
+                                <h3> Email Me </h3>
+                                <p>contact@example.com</p>
+                            </div>
+                        </div>
+                    </div>  
+                </section>
+        </article>
+    </main>
+</body>
+</html>

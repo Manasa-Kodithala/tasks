@@ -271,7 +271,7 @@ let info="";
 for(let i in Products){
     console.log(Products[i].title);
  info+=` <div class="card " style="width: 18rem;" id="mainContent">
- <img src="${Products[i].image}" class="card-img-top" alt="...">
+ <img src="${Products[i].image}" class="card-img-top" alt="..." width>
  <span class="badge rounded-pill text-bg-info">Rate:${Products[i].rating.rate}  Count:${Products[i].rating.count}</span>
 
  <div class="card-body">
@@ -283,8 +283,7 @@ for(let i in Products){
  <p class="card-text">Category : ${Products[i].category}</p>
  </div>
 
-</div>
-`
+</div>`;
 } 
 console.log(info);
 
